@@ -10,6 +10,7 @@ mochila = pd.DataFrame({
     'pontos': [6, 7, 3, 2, 9, 5, 2, 10, 6],
     'peso': [200, 400, 400, 100, 1000, 200, 30, 3000, 500]
 })
+print(mochila)
 
 def fitness(individuo):
     pontos = sum(mochila['pontos'][i] for i in range(9) if individuo[i])
